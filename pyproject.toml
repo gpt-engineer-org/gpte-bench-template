@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "gpte-bench-template"
+version = "0.1.0"
+description = ""
+authors = ["Axel Theorell <axel.theorell@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+gpt-engineer = { path = "/home/axel/Software/gpt-engineer-dev" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

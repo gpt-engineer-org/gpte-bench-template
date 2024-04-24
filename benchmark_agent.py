@@ -1,8 +1,3 @@
-"""
-Test 
-
-"""
-
 import tempfile
 
 from typing import Optional
@@ -21,7 +16,6 @@ from gpt_engineer.core.default.steps import improve_fn as improve
 from gpt_engineer.core.files_dict import FilesDict
 from gpt_engineer.core.preprompts_holder import PrepromptsHolder
 
-MAX_SELF_HEAL_ATTEMPTS = 4
 
 
 class BenchmarkAgent:
@@ -81,7 +75,7 @@ class BenchmarkAgent:
 
 def default_config_agent():
     """
-    Creates an instance of SimpleAgent with default configuration.
+    Creates an instance of BenchmarkAgent with default configuration.
 
     Returns
     -------

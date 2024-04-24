@@ -1,0 +1,8 @@
+
+.idea/
+
+.gpteng/
+
+.langchain.db
+
+__pycache__/

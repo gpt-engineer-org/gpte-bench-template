@@ -1,0 +1,1 @@
+Make a template python project with poetry install version management. The project should have one pip installable dependency called "gpt-engineer". There should be a runnable main file which prints "hello world" and a readme file in markdown with sections demonstrating how to make a pretty readme file.
