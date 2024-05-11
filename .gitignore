@@ -6,3 +6,5 @@
 .langchain.db
 
 __pycache__/
+
+results.yaml
