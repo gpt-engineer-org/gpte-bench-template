@@ -73,6 +73,7 @@ class BenchmarkAgent:
 
         return files_dict
 
+
 def default_config_agent():
     """
     Creates an instance of BenchmarkAgent with default configuration.
