@@ -8,9 +8,9 @@ train_end_index = 0
 
 # For mbpp, the maximal range is 0:47
 [mbpp]
-active = false
-test_len = 5
+active = true
+test_len = 47
 train_len = 0
 
 [gptme]
-active = true
+active = false
