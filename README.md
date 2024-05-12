@@ -4,7 +4,7 @@ This repository serves as a template for creating an agent that interacts with t
 
 ## Agent Implementation
 
-Edit the benchmarking_agent.py file to implement your custom agent. This file contains a minimal example agent that you should replace with your own logic. Feel free to add any necessary functionality specific to your use case.
+Edit the benchmarking_agent.py file to implement your custom agent. This file contains a minimal example agent that you should replace with your own logic. If you want to benchmark a coding agent residing in another repo, we recommend installing it as a package and interfacing in the benchmark_agent.py file.
 
 ## Running the Benchmark
 
@@ -18,6 +18,11 @@ Remember that any api keys required by the implemented agents must be defined. T
 
 ## Scoreboard entries
 
-At the end of running the benchmarks with _run.sh_, you will be asked whether you want to make a scoreboard entry. This means that the results from _results.yaml_ will be appended to the file _scoreboard.yaml_. If you choose this, you have the possibility to commit the scoreboard (scoreboard.yaml ONLY) and make a pull request with it to the main repo. If you choose to do this, you will be requested to submit additional information used for reproducing the benchmark, which will be done before the scoreboard entry is merged. The best way to ensure reproducibility is to fork this repo and implement your agent in the benchmark_agent.py file. The benchmark_agent can of course have any number of dependencies from your personal agent repo. If done this way, it is enough to provide a url to the github or gitlab size where the fork is located. If some other setup is used, it is up to you to provide an easy and reliable way for us to reproduce the results. At the end of running _run.sh_, there will be a dialogue where you will be provided with a free text option for how to reproduce your results. Note that, any custom LLM configuration should also be provided. The maintainers of this repo will reject any scoreboard entry PR that is deemed too cumbersome to reproduce.
+At the end of running the benchmarks with _run.sh_, you will be asked whether you want to make a scoreboard entry. This means that the results from _results.yaml_ will be appended to the file _scoreboard.yaml_. 
+
+If you choose this, the _scoreboard.yaml_ file will be updated, which you can upload as a pull request to the template repo. 
+To ensure reproducibility, you will be requested to submit additional information. Only reproducible entries will be merged. The best way to ensure reproducibility is to fork this repo and implement your agent in the benchmark_agent.py file. If done this way, it is enough to provide a url to the github or gitlab site where the fork is located. 
+
+If some other setup is used, it is up to you to provide an easy and reliable way for us to reproduce the results. At the end of running _run.sh_, there will be a dialogue where you will be provided with a free text option for how to reproduce your results. Note that, any custom LLM configuration should also be provided. The maintainers of this repo will reject any scoreboard entry PR that is deemed too cumbersome to reproduce.
 
 
