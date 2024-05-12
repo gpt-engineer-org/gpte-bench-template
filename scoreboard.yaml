@@ -1,0 +1,350 @@
+- commit_hash: 7b769629dbd0dc8426735de0b8ef7eab963e8634
+  config:
+    apps:
+      active: false
+      examples_per_problem: 10
+      test_end_index: 2
+      test_start_index: 0
+      train_end_index: 0
+      train_start_index: 0
+    gptme:
+      active: false
+    mbpp:
+      active: true
+      test_len: 47
+      train_len: 0
+  free_text: ''
+  mbpp:
+    detailed:
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 15.154375553131104
+      solved: 1.0
+      task_name: '11'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 10.1854887008667
+      solved: 1.0
+      task_name: '12'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 8.401114702224731
+      solved: 1.0
+      task_name: '14'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 9.382462978363037
+      solved: 1.0
+      task_name: '16'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 4.633573532104492
+      solved: 1.0
+      task_name: '17'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 10.539422512054443
+      solved: 0.0
+      task_name: '18'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 12.259933233261108
+      solved: 1.0
+      task_name: '19'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 15.56282114982605
+      solved: 1.0
+      task_name: '20'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 9.100529432296753
+      solved: 0.0
+      task_name: '56'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 41.97397208213806
+      solved: 0.0
+      task_name: '57'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+        correct assertion 3: true
+      duration: 11.87006402015686
+      solved: 1.0
+      task_name: '58'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 7.852090120315552
+      solved: 1.0
+      task_name: '59'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 24.981012105941772
+      solved: 1.0
+      task_name: '61'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 8.738342523574829
+      solved: 1.0
+      task_name: '62'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 16.313709497451782
+      solved: 1.0
+      task_name: '63'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 8.986987590789795
+      solved: 1.0
+      task_name: '64'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 9.340210914611816
+      solved: 1.0
+      task_name: '65'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 5.844646692276001
+      solved: 1.0
+      task_name: '66'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: false
+      duration: 15.344674825668335
+      solved: 0.6666666666666666
+      task_name: '67'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 11.914908647537231
+      solved: 1.0
+      task_name: '68'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 12.013017892837524
+      solved: 1.0
+      task_name: '69'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 16.870671033859253
+      solved: 0.0
+      task_name: '70'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 48.244110345840454
+      solved: 0.0
+      task_name: '71'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 16.62780737876892
+      solved: 1.0
+      task_name: '72'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 13.63066053390503
+      solved: 1.0
+      task_name: '74'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 10.848251342773438
+      solved: 1.0
+      task_name: '75'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 7.694000959396362
+      solved: 1.0
+      task_name: '77'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 7.134278297424316
+      solved: 1.0
+      task_name: '79'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 8.286784410476685
+      solved: 1.0
+      task_name: '80'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 6.906893253326416
+      solved: 1.0
+      task_name: '82'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 12.530449867248535
+      solved: 0.0
+      task_name: '83'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 22.510085105895996
+      solved: 1.0
+      task_name: '84'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 6.505732774734497
+      solved: 1.0
+      task_name: '85'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 12.280411958694458
+      solved: 1.0
+      task_name: '86'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 17.363810777664185
+      solved: 0.3333333333333333
+      task_name: '87'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 5.208524465560913
+      solved: 1.0
+      task_name: '88'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 10.290518522262573
+      solved: 1.0
+      task_name: '89'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 7.996829271316528
+      solved: 1.0
+      task_name: '90'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: true
+        correct assertion 2: false
+      duration: 12.116943597793579
+      solved: 0.3333333333333333
+      task_name: '91'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 14.231275081634521
+      solved: 1.0
+      task_name: '92'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 12.339287757873535
+      solved: 1.0
+      task_name: '93'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 9.016540050506592
+      solved: 1.0
+      task_name: '94'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 11.766494512557983
+      solved: 1.0
+      task_name: '95'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 6.723482847213745
+      solved: 1.0
+      task_name: '96'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 23.172945261001587
+      solved: 0.0
+      task_name: '97'
+    - assertion_results:
+        correct assertion 0: false
+        correct assertion 1: false
+        correct assertion 2: false
+      duration: 10.580248832702637
+      solved: 0.0
+      task_name: '98'
+    - assertion_results:
+        correct assertion 0: true
+        correct assertion 1: true
+        correct assertion 2: true
+      duration: 10.41843867301941
+      solved: 1.0
+      task_name: '99'
+    fully_solved: 0.7659574468085106
+  url: https://github.com/ATheorell/gpte-bench-template
