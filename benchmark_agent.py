@@ -1,5 +1,5 @@
 import tempfile
-
+import os
 from typing import Optional
 
 from gpt_engineer.core.ai import AI
@@ -17,14 +17,23 @@ from gpt_engineer.core.files_dict import FilesDict
 from gpt_engineer.core.preprompts_holder import PrepromptsHolder
 
 
+# THIS METHOD IS USED BY "bench" TO SET UP THE AGENT AND MUST BE IMPLEMENTED.
+# THE ONLY OTHER REQUIREMENT IS THAT THE AGENT IMPLEMENTS "improve".
+def default_config_agent():
+    """
+    Creates an instance of BenchmarkAgent with default configuration.
+
+    Returns
+    -------
+    BenchmarkAgent
+    """
+    return BenchmarkAgent.with_default_config(tempfile.mkdtemp())
+
 
 class BenchmarkAgent:
     """
-    An agent that uses AI to generate and improve code based on a given prompt.
-
-    This agent is capable of initializing a codebase from a prompt and improving an existing
-    codebase based on user input. It uses an AI model to generate and refine code, and it
-    interacts with a repository and an execution environment to manage and execute the code.
+    A template agent for BenchmarkAgents. The only method that MUST BE IMPLEMENTED to run "bench" is "improve".
+    The below implementation uses the standard improve in gpt-engineer.
 
     Attributes
     ----------
@@ -48,12 +57,21 @@ class BenchmarkAgent:
         self.preprompts_holder = preprompts_holder or PrepromptsHolder(PREPROMPTS_PATH)
         self.memory = memory
         self.execution_env = execution_env
-        self.ai = ai or AI()
+        self.ai = ai or AI(
+            model_name=os.environ.get("MODEL_NAME", "gpt-4-turbo"),
+        )
 
     @classmethod
     def with_default_config(
         cls, path: str, ai: AI = None, preprompts_holder: PrepromptsHolder = None
     ):
+        """
+        Convenience method to create a BenchmarkAgent with default configuration.
+        :param path:
+        :param ai:
+        :param preprompts_holder:
+        :return: BenchmarkAgent
+        """
         return cls(
             memory=DiskMemory(memory_path(path)),
             execution_env=DiskExecutionEnv(),
@@ -67,20 +85,15 @@ class BenchmarkAgent:
         prompt: Prompt,
         execution_command: Optional[str] = None,
     ) -> FilesDict:
+        """
+        A required function that existing code, a prompt and optionally a command for executing the code (used for self-heal).
+        :param files_dict:
+        :param prompt:
+        :param execution_command:
+        :return: FilesDict
+        """
         files_dict = improve(
             self.ai, prompt, files_dict, self.memory, self.preprompts_holder
         )
 
         return files_dict
-
-
-def default_config_agent():
-    """
-    Creates an instance of BenchmarkAgent with default configuration.
-
-    Returns
-    -------
-    SimpleAgent
-        An instance of SimpleAgent with a temporary directory as its base path.
-    """
-    return BenchmarkAgent.with_default_config(tempfile.mkdtemp())

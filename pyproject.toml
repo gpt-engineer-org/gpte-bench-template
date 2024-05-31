@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-gpt-engineer = { git = "https://github.com/gpt-engineer-org/gpt-engineer" }
+gpt-engineer = {path = "/home/axel/Software/gpt-engineer-dev", develop = true} #{ git = "https://github.com/gpt-engineer-org/gpt-engineer" }
 GitPython = "^3"
 
 [build-system]
