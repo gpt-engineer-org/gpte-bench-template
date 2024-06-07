@@ -1,6 +1,6 @@
 # GPT-Engineer Benchmark Suite Template
 
-This repository serves as a template for creating an agent that interacts with the GPT-Engineer benchmark suite. Follow the instructions below to set up your project.
+This repository serves as a template for creating an agent that interacts with the GPT-Engineer benchmark suite.
 
 ## Agent Implementation
 
